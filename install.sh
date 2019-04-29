@@ -52,8 +52,9 @@ gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-ugly gstreame
 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-free-extras ffmpeg -y
 
 # Install some programs
-dnf install nautilus terminator timeshift firefox keepassxc libreoffice evince inkscape kicad freecad \
-gnome-boxes gnome-calculator evolution kde-connect nextcloud-client neovim python{2,3}-neovim -y
+dnf install nautilus terminator timeshift firefox keepassxc libreoffice evince gnome-calculator -y
+dnf install inkscape kicad freecad -y
+dnf install gnome-boxes evolution kde-connect nextcloud-client neovim python{2,3}-neovim -y
 
 ### Install i3-gaps
 cd /tmp
