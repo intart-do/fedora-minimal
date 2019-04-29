@@ -89,7 +89,7 @@ sudo -u $USERNAME git clone https://github.com/zsh-users/zsh-history-substring-s
 ### Fantasque Fonts
 cd /tmp
 wget https://github.com/belluzj/fantasque-sans/releases/download/v1.7.2/FantasqueSansMono-Normal.zip
-unzip FantasqueSansMono-Normal.zip
+unzip -o FantasqueSansMono-Normal.zip
 cd OTF
 mkdir /usr/share/fonts/fantasque
 cp *.otf /usr/share/fonts/fantasque
@@ -97,15 +97,17 @@ cp *.otf /usr/share/fonts/fantasque
 ### Material Design Fonts
 cd /tmp
 wget -O master.zip https://codeload.github.com/Templarian/MaterialDesign-Webfont/zip/master
-unzip master.zip
+unzip -o master.zip
 cd MaterialDesign-Webfont-master/fonts/
+rm -R /usr/share/fonts/material-design
 mkdir /usr/share/fonts/material-design
 cp *.ttf /usr/share/fonts/material-design
 
 ### Awesome For Desktop Fonts 
 cd /tmp
 wget https://use.fontawesome.com/releases/v5.8.1/fontawesome-free-5.8.1-desktop.zip
-unzip fontawesome-free-5.8.1-desktop.zip
+unzip -o fontawesome-free-5.8.1-desktop.zip
+rm -R /usr/share/fonts/awesome
 mkdir /usr/share/fonts/awesome
 cd fontawesome-free-5.8.1-desktop/otfs 
 cp *.otf /usr/share/fonts/awesome
@@ -113,9 +115,12 @@ cp *.otf /usr/share/fonts/awesome
 ### Fira Mono Nerd Fonts
 cd tmp
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/FiraMono.zip
-unzip FiraMono.zip 
+unzip -o FiraMono.zip 
+rm -R /usr/share/fonts/fira-mono
 mkdir /usr/share/fonts/fira-mono
 cp Fura\ Mono\ * /usr/share/fonts/fira-mono
 fc-cache -f
 
+echo 'The End'
+echo 'Now Reboot'
 
