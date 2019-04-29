@@ -21,13 +21,6 @@ dnf install lightdm lightdm-gtk -y
 systemctl enable lightdm.service
 systemctl set-default graphical.target
 
-# Install some utilities
-dnf install git wget curl stow mlocate zip unzip tar wireless-tools crda network-manager-applet \
-NetworkManager-wifi wpa_supplicant sqlite pciutils usbutils snapd -y
-
-systemctl enable --now snapd.socket
-sudo ln -s /var/lib/snapd/snap /snap
-
 # Configure Git
 dnf install git -y
 sudo -u $USERNAME git config --global user.name $GITUSER 
@@ -70,7 +63,6 @@ wget https://github.com/intart-do/rpmbuild/raw/master/RPMS/polybar-3.3.1-1.x86_6
 dnf install polybar-3.3.1-1.x86_64.rpm -y
 
 ### Install Spotify
-snap install spotify
 
 ### Install zsh
 dnf install zsh -y
