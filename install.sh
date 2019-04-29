@@ -33,7 +33,7 @@ sudo -u $USERNAME stow dunst i3 neovim polybar rofi terminator zsh
 
 # Install some utilities
 dnf install wget curl stow mlocate zip unzip tar wireless-tools crda network-manager-applet \
-NetworkManager-wifi wpa_supplicant sqlite util-linux-user pciutils usbutils -y
+NetworkManager-wifi wpa_supplicant sqlite util-linux-user pciutils usbutils flatpak -y
 
 dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
 dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
@@ -63,6 +63,7 @@ wget https://github.com/intart-do/rpmbuild/raw/master/RPMS/polybar-3.3.1-1.x86_6
 dnf install polybar-3.3.1-1.x86_64.rpm -y
 
 # Install Spotify
+flatpak install -y --from https://flathub.org/repo/appstream/com.spotify.Client.flatpakref
 
 # Install zsh
 dnf install zsh -y
