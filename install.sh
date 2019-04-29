@@ -121,6 +121,9 @@ mkdir /usr/share/fonts/fira-mono
 cp Fura\ Mono\ * /usr/share/fonts/fira-mono
 fc-cache -f
 
+### Change shell
+sudo -u $USERNAME chsh -s $(which zsh)
+
 echo 'The End'
 echo 'Now Reboot'
 
