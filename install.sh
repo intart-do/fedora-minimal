@@ -10,7 +10,7 @@ USERNAME=intart
 # Update system
 dnf update -y
 
-# Set hostname
+ Set hostname
 hostnamectl set-hostname $USERNAME-pc
 
 # Install graphical enviroment
@@ -31,7 +31,7 @@ sudo -u $USERNAME git config --global user.name  "Víctor Peñaló"
 sudo -u $USERNAME git config --global user.email  "victor.alexander23@gmail.com"
 
 # Set configuration files
-sudo -u $USERNAME git clone https://github.com/intart-do/.dotfiles.git ~/.dotfiles
+sudo -u $USERNAME git clone https://github.com/intart-do/.dotfiles.git /home/$USERNAME/.dotfiles
 cd /home/$USERNAME/.dotfiles
 sudo -u $USERNAME stow dunst i3 neovim polybar rofi terminator zsh
 
