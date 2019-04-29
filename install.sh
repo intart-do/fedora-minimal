@@ -23,6 +23,7 @@ systemctl set-default graphical.target
 dnf install git wget curl stow mlocate zip unzip tar wireless-tools crda network-manager-applet \
 NetworkManager-wifi wpa_supplicant sqlite pciutils usbutils snapd -y
 
+systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
 
 # Configure Git
