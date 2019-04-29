@@ -72,19 +72,19 @@ snap install spotify
 dnf install zsh -y
 
 #### oh-my-zsh
-sudo -u $USERNAME sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sudo -u $USERNAME git clone https://github.com/robbyrussell/oh-my-zsh.git /home/$USERNAME/.oh-my-zsh
 
 #### zsh-autosuggestions
-sudo -u $USERNAME git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+sudo -u $USERNAME git clone https://github.com/zsh-users/zsh-autosuggestions /home/$USERNAME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 #### zsh-completions 
-sudo -u $USERNAME git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+sudo -u $USERNAME git clone https://github.com/zsh-users/zsh-completions /home/$USERNAME/.oh-my-zsh/custom/plugins/zsh-completions
 
 #### zsh-syntax-highlighting
-sudo -u $USERNAME git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+sudo -u $USERNAME git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /home/$USERNAME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 #### zsh-history-substring-search
-sudo -u $USERNAME git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
+sudo -u $USERNAME git clone https://github.com/zsh-users/zsh-history-substring-search /home/$USERNAME/.oh-my-zsh/custom/plugins/zsh-history-substring-search
 
 ### Fantasque Fonts
 cd /tmp
