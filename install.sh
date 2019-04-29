@@ -6,6 +6,8 @@ fi
 
 # Variables
 USERNAME=intart
+GITUSER="Víctor Peñaló"
+GITEMAIL="victor.alexander23@gmail.com"
 
 # Update system
 dnf update -y
@@ -28,8 +30,8 @@ sudo ln -s /var/lib/snapd/snap /snap
 
 # Configure Git
 dnf install git -y
-sudo -u $USERNAME git config --global user.name  "Víctor Peñaló"
-sudo -u $USERNAME git config --global user.email  "victor.alexander23@gmail.com"
+sudo -u $USERNAME git config --global user.name $GITUSER 
+sudo -u $USERNAME git config --global user.email  $GITEMAIL
 
 # Set configuration files
 sudo -u $USERNAME git clone https://github.com/intart-do/.dotfiles.git /home/$USERNAME/.dotfiles
