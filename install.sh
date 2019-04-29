@@ -123,6 +123,9 @@ mkdir /usr/share/fonts/fira-mono
 cp Fura\ Mono\ * /usr/share/fonts/fira-mono
 fc-cache -f
 
+### Create default user folders
+sudo -u $USERNAME xdg-user-dirs-update
+
 ### Change shell
 sudo -u $USERNAME chsh -s $(which zsh)
 
