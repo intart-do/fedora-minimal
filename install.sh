@@ -38,10 +38,10 @@ NetworkManager-wifi wpa_supplicant sqlite util-linux-user pciutils usbutils flat
 dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
 dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 
-dnf install gnome-keyring-pam gnome-keyring libgnome-keyring polkit polkit-gnome libsecret \
+dnf install openssh-askpass gnome-keyring-pam gnome-keyring libgnome-keyring polkit polkit-gnome libsecret \
 gvfs gvfs-mtp gvfs-nfs gvfs-fuse gvfs-smb ntfs-3g \
 pulseaudio pulseaudio-esound-compat alsa-plugins-pulseaudio pulseaudio-module-x11 pulseaudio-module-gconf pulseaudio-utils \
-dejavu-sans-mono-fonts liberation-*-fonts \
+pavucontrol dejavu-sans-mono-fonts liberation-*-fonts \
 lxappearance qt5ct adwaita-qt4 adwaita-qt5 \
 gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-ugly gstreamer1-plugins-bad-free gstreamer1-plugins-bad-free \
 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-free-extras ffmpeg -y
