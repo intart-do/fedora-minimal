@@ -5,9 +5,9 @@ if [ "$EUID" -ne 0 ]
 fi
 
 # Variables
-USERNAME=intart
-GITUSER="Víctor Peñaló"
-GITEMAIL="victor.alexander23@gmail.com"
+USERNAME=xxxxx
+GITUSER="xxxxx"
+GITEMAIL="xxxxx@xxxxx.com"
 
 # Update system
 dnf update -y
