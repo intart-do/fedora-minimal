@@ -67,6 +67,9 @@ dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86
 rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 dnf install brave-keyring brave-browser -y
 
+# Install KVM and Virtual Machine Manager
+dnf install bridge-utils libvirt virt-install qemu-kvm virt-top libguestfs-tools virt-manager -y
+systemctl enable libvirtd
 
 # Install Spotify
 flatpak install -y --from https://flathub.org/repo/appstream/com.spotify.Client.flatpakref
