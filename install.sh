@@ -62,6 +62,12 @@ cd /tmp
 wget https://github.com/intart-do/rpmbuild/raw/master/RPMS/polybar-3.3.1-1.x86_64.rpm
 dnf install polybar-3.3.1-1.x86_64.rpm -y
 
+# Install Brave Browser
+dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+dnf install brave-keyring brave-browser -y
+
+
 # Install Spotify
 flatpak install -y --from https://flathub.org/repo/appstream/com.spotify.Client.flatpakref
 
