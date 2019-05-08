@@ -50,6 +50,7 @@ gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-free-extras ffmpeg -y
 dnf install xfce4-terminal thunar timeshift file-roller firefox keepassxc libreoffice evince -y
 dnf install inkscape kicad freecad -y
 dnf install evolution kde-connect nextcloud-client neovim python{2,3}-neovim -y
+dnf install yubikey-personalization-gui -y
 
 # Install i3-gaps
 cd /tmp
