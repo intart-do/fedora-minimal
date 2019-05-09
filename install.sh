@@ -47,7 +47,7 @@ gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-ugly gstreame
 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-free-extras ffmpeg -y
 
 # Install some programs
-dnf install xfce4-terminal thunar timeshift file-roller firefox keepassxc libreoffice evince -y
+dnf install xfce4-terminal thunar timeshift file-roller firefox keepassxc libreoffice evince exaile -y
 dnf install inkscape kicad freecad -y
 dnf install evolution kde-connect nextcloud-client neovim python{2,3}-neovim -y
 dnf install yubikey-personalization-gui -y
