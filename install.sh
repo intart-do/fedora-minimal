@@ -53,7 +53,7 @@ dnf install evolution kde-connect nextcloud-client -y
 dnf install yubikey-personalization-gui -y
 
 # Install neovim
-dnf install neovim python{2,3}-neovim -y
+dnf install neovim python3-neovim -y
 sudo -u $USERNAME curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
