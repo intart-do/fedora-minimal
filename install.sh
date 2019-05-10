@@ -28,7 +28,7 @@ sudo -u $USERNAME git config --global user.name $GITUSER
 sudo -u $USERNAME git config --global user.email  $GITEMAIL
 
 # Set configuration files
-dnf install stow -y
+dnf install stow wget -y
 sudo -u $USERNAME mkdir -p /home/$USERNAME/.local/share/xfce4/terminal/colorschemes
 sudo -u $USERNAME mkdir -p /home/$USERNAME/.local/share/rofi/themes
 sudo -u $USERNAME wget -P /home/$USERNAME/.local/share/xfce4/terminal/colorschemes  https://github.com/afg984/base16-xfce4-terminal/raw/master/colorschemes/base16-solarized-dark.theme
@@ -37,7 +37,7 @@ cd /home/$USERNAME/.dotfiles
 sudo -u $USERNAME stow dunst i3 neovim polybar rofi xfce4-terminal zsh 
 
 # Install some utilities
-dnf install wget curl mlocate zip unzip tar wireless-tools crda network-manager-applet \
+dnf install curl mlocate zip unzip tar wireless-tools crda network-manager-applet \
 NetworkManager-wifi openvpn NetworkManager-openvpn NetworkManager-openvpn-gnome wpa_supplicant sqlite util-linux-user pciutils usbutils flatpak -y
 
 dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
