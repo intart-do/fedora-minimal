@@ -29,9 +29,11 @@ sudo -u $USERNAME git config --global user.email  $GITEMAIL
 
 # Set configuration files
 dnf install stow -y
+sudo -u $USERNAME mkdir -p /home/$USERNAME/.local/share/xfce4/terminal/colorschemes
+sudo -u $USERNAME wget -P /home/$USERNAME/.local/share/xfce4/terminal/colorschemes  https://github.com/afg984/base16-xfce4-terminal/raw/master/colorschemes/base16-solarized-dark.theme
 sudo -u $USERNAME git clone https://github.com/intart-do/.dotfiles.git /home/$USERNAME/.dotfiles
 cd /home/$USERNAME/.dotfiles
-sudo -u $USERNAME stow dunst i3 neovim polybar rofi zsh 
+sudo -u $USERNAME stow dunst i3 neovim polybar rofi xfce4-terminal zsh 
 
 # Install some utilities
 dnf install wget curl mlocate zip unzip tar wireless-tools crda network-manager-applet \
