@@ -5,15 +5,16 @@ if [ "$EUID" -ne 0 ]
 fi
 
 # Variables
-USERNAME=xxxxx
+USERNAME="xxxxx"
 GITUSER="xxxxx"
 GITEMAIL="xxxxx@xxxxx.com"
+HOSTNAME="xxxxx"
 
 # Update system
 dnf update -y
 
 # Set hostname
-hostnamectl set-hostname $USERNAME-pc
+hostnamectl set-hostname $HOSTNAME
 
 # Install graphical enviroment
 dnf groupinstall base-x -y
