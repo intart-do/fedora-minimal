@@ -30,7 +30,7 @@ sudo -u $USERNAME git config --global user.email  $GITEMAIL
 # Set configuration files
 sudo -u $USERNAME git clone https://github.com/intart-do/.dotfiles.git /home/$USERNAME/.dotfiles
 cd /home/$USERNAME/.dotfiles
-sudo -u $USERNAME stow dunst i3 polybar rofi 
+sudo -u $USERNAME stow dunst i3 neovim polybar rofi zsh 
 
 # Install some utilities
 dnf install wget curl stow mlocate zip unzip tar wireless-tools crda network-manager-applet \
