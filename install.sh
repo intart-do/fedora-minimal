@@ -28,12 +28,13 @@ sudo -u $USERNAME git config --global user.name $GITUSER
 sudo -u $USERNAME git config --global user.email  $GITEMAIL
 
 # Set configuration files
+dnf install stow -y
 sudo -u $USERNAME git clone https://github.com/intart-do/.dotfiles.git /home/$USERNAME/.dotfiles
 cd /home/$USERNAME/.dotfiles
 sudo -u $USERNAME stow dunst i3 neovim polybar rofi zsh 
 
 # Install some utilities
-dnf install wget curl stow mlocate zip unzip tar wireless-tools crda network-manager-applet \
+dnf install wget curl mlocate zip unzip tar wireless-tools crda network-manager-applet \
 NetworkManager-wifi openvpn NetworkManager-openvpn NetworkManager-openvpn-gnome wpa_supplicant sqlite util-linux-user pciutils usbutils flatpak -y
 
 dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
