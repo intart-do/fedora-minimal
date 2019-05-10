@@ -54,8 +54,7 @@ dnf install yubikey-personalization-gui -y
 
 # Install neovim
 dnf install neovim python3-neovim -y
-sudo -u $USERNAME curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sudo -u $USERNAME curl -fLo /home/$USERNAME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Install i3-gaps
 cd /tmp
