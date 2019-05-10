@@ -58,14 +58,14 @@ sudo -u $USERNAME curl -fLo /home/$USERNAME/.local/share/nvim/site/autoload/plug
 
 # Install i3-gaps
 cd /tmp
-wget https://github.com/intart-do/rpmbuild/raw/master/RPMS/i3-gaps-4.16.1-1.fc29.x86_64.rpm
+wget https://github.com/intart-do/rpmbuild/raw/master/RPMS/i3-gaps-4.16.1-1.fc30.x86_64.rpm
 dnf install i3-gaps-4.16.1-1.fc29.x86_64.rpm -y
 dnf install rofi i3status i3lock dunst compton feh -y
 
 # Install polybar
 cd /tmp
-wget https://github.com/intart-do/rpmbuild/raw/master/RPMS/polybar-3.3.1-1.x86_64.rpm
-dnf install polybar-3.3.1-1.x86_64.rpm -y
+wget https://github.com/intart-do/rpmbuild/raw/master/RPMS/polybar-3.3.1-1.fc30.x86_64.rpm
+dnf install polybar-3.3.1-1.fc30.x86_64.rpm -y
 
 # Install Brave Browser
 dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
