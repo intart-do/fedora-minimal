@@ -29,7 +29,7 @@ sudo -u $USERNAME git config --global user.email  $GITEMAIL
 # Set configuration files
 sudo -u $USERNAME git clone https://github.com/intart-do/.dotfiles.git /home/$USERNAME/.dotfiles
 cd /home/$USERNAME/.dotfiles
-sudo -u $USERNAME stow dunst i3 neovim polybar rofi 
+sudo -u $USERNAME stow dunst i3 polybar rofi 
 
 # Install some utilities
 dnf install wget curl stow mlocate zip unzip tar wireless-tools crda network-manager-applet \
@@ -49,8 +49,13 @@ gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-free-extras ffmpeg -y
 # Install some programs
 dnf install xfce4-terminal thunar timeshift file-roller firefox keepassxc libreoffice evince exaile -y
 dnf install inkscape kicad freecad -y
-dnf install evolution kde-connect nextcloud-client neovim python{2,3}-neovim -y
+dnf install evolution kde-connect nextcloud-client -y
 dnf install yubikey-personalization-gui -y
+
+# Install neovim
+dnf install neovim python{2,3}-neovim -y
+sudo -u $USERNAME curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Install i3-gaps
 cd /tmp
