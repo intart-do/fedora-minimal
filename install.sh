@@ -82,7 +82,9 @@ dnf install bridge-utils libvirt virt-install qemu-kvm virt-top libguestfs-tools
 systemctl enable libvirtd
 
 # Install Spotify
-flatpak install -y --from https://flathub.org/repo/appstream/com.spotify.Client.flatpakref
+dnf install snapd -y
+ln -s /var/lib/snapd/snap /snap
+snap install spotify -y
 
 # Install zsh
 dnf install zsh -y
