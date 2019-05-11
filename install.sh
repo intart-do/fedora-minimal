@@ -84,7 +84,7 @@ systemctl enable libvirtd
 # Install Spotify
 dnf install snapd -y
 ln -s /var/lib/snapd/snap /snap
-snap install spotify -y
+snap install spotify
 
 # Install zsh
 dnf install zsh -y
