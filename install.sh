@@ -54,8 +54,7 @@ gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-free-extras ffmpeg -y
 # Install some programs
 dnf install xfce4-terminal gnome-calculator nautilus timeshift firefox keepassxc libreoffice evince vlc exaile -y
 dnf install inkscape kicad freecad -y
-dnf install evolution kde-connect nextcloud-client -y
-dnf install yubikey-personalization-gui -y
+dnf install evolution kde-connect wireshark audacity seafile-client yubikey-personalization-gui -y
 
 # Install neovim
 dnf install neovim python3-neovim -y
