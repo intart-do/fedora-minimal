@@ -54,7 +54,11 @@ gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-free-extras ffmpeg -y
 # Install some programs
 dnf install xfce4-terminal gnome-calculator nautilus timeshift firefox keepassxc libreoffice evince vlc exaile -y
 dnf install inkscape kicad freecad -y
-dnf install evolution kde-connect wireshark audacity seafile-client yubikey-personalization-gui -y
+dnf install evolution kde-connect audacity seafile-client yubikey-personalization-gui -y
+
+# Install Wireshark
+sudo dnf install wireshark
+sudo usermod -a -G wireshark $USERNAME
 
 # Install neovim
 dnf install neovim python3-neovim -y
