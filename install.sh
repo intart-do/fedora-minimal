@@ -52,7 +52,7 @@ gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-ugly gstreame
 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-free-extras ffmpeg -y
 
 # Install some programs
-dnf install xfce4-terminal gnome-calculator nautilus timeshift firefox keepassxc libreoffice gthumb evince vlc exaile -y
+dnf install xfce4-terminal gnome-calculator nautilus timeshift firefox keepassxc libreoffice gthumb evince vlc rhythmbox -y
 dnf install inkscape kicad freecad -y
 dnf install evolution kde-connect audacity seafile-client yubikey-personalization-gui -y
 
