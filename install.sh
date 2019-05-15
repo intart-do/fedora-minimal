@@ -60,6 +60,11 @@ dnf install evolution kde-connect audacity seafile-client yubikey-personalizatio
 sudo dnf install wireshark -y 
 sudo usermod -a -G wireshark $USERNAME
 
+# Install Tutonota Mail Client
+mkdir /opt/tutanota
+wget -P /opt/tutanota/ https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage
+chmod +x /opt/tutanota/tutanota-desktop-linux.AppImage
+
 # Install neovim
 dnf install neovim python3-neovim -y
 sudo -u $USERNAME curl -fLo /home/$USERNAME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
