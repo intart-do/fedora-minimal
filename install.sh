@@ -57,7 +57,7 @@ dnf install inkscape kicad freecad -y
 dnf install evolution kde-connect audacity seafile-client yubikey-personalization-gui -y
 
 # Install Wireshark
-sudo dnf install wireshark
+sudo dnf install wireshark -y 
 sudo usermod -a -G wireshark $USERNAME
 
 # Install neovim
