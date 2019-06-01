@@ -37,7 +37,7 @@ cd /home/$USERNAME/.dotfiles
 sudo -u $USERNAME stow dunst i3 neovim polybar rofi xfce4-terminal zsh 
 
 # Install some utilities
-dnf install curl mlocate zip unzip tar wireless-tools crda network-manager-applet \
+dnf install curl mlocate zip unzip tar wireless-tools crda network-manager-applet nano \
 NetworkManager-wifi openvpn NetworkManager-openvpn NetworkManager-openvpn-gnome wpa_supplicant sqlite util-linux-user pciutils usbutils flatpak -y
 
 dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
