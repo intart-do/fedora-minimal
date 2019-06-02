@@ -80,11 +80,6 @@ cd /tmp
 wget https://github.com/intart-do/rpmbuild/raw/master/RPMS/polybar-3.3.1-1.fc30.x86_64.rpm
 dnf install polybar-3.3.1-1.fc30.x86_64.rpm -y
 
-# Install Brave Browser
-dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
-rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-dnf install brave-keyring brave-browser -y
-
 # Install KVM and Virtual Machine Manager
 dnf install bridge-utils libvirt virt-install qemu-kvm virt-top libguestfs-tools virt-manager -y
 systemctl enable libvirtd
