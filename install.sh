@@ -47,7 +47,7 @@ dnf install openssh-askpass gnome-keyring-pam gnome-keyring libgnome-keyring pol
 gvfs gvfs-mtp gvfs-nfs gvfs-fuse gvfs-smb ntfs-3g \
 pulseaudio pulseaudio-esound-compat alsa-plugins-pulseaudio pulseaudio-module-x11 pulseaudio-module-gconf pulseaudio-utils \
 pavucontrol dejavu-sans-mono-fonts liberation-*-fonts \
-lxappearance qt5ct adwaita-qt4 adwaita-qt5 \
+lxappearance qt5ct adwaita-qt4 adwaita-qt5 xdg-user-dirs \
 gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-ugly gstreamer1-plugins-bad-free gstreamer1-plugins-bad-free \
 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-free-extras ffmpeg -y
 
