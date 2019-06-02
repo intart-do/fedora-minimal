@@ -53,7 +53,7 @@ gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-free-extras ffmpeg -y
 
 # Install some programs
 dnf install xfce4-terminal gnome-calculator nautilus timeshift firefox keepassxc gedit libreoffice gthumb evince vlc rhythmbox -y
-dnf install inkscape kicad freecad -y
+dnf install inkscape kicad freecad pulseview -y
 dnf install evolution kde-connect audacity seafile-client yubikey-personalization-gui -y
 
 # Install Wireshark
