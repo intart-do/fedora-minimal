@@ -56,8 +56,14 @@ dnf install xfce4-terminal gnome-calculator nautilus timeshift firefox keepassxc
 dnf install inkscape kicad freecad pulseview -y
 dnf install evolution transmission-gtk kde-connect audacity seafile-client yubikey-personalization-gui -y
 
+## Install VSCodium
+rpm --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
+dnf config-manager --add-repo https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/rpms/
+dnf install vscodium -y
+
+
 # Install Wireshark
-sudo dnf install wireshark -y 
+sudo dnf install wireshark -y
 sudo usermod -a -G wireshark $USERNAME
 
 # Install Tutonota Mail Client
